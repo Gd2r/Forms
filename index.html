@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms Homework</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+
+    <div class="left_side">
+        <div class="overlay">
+            Hisham's sign up page
+        </div>
+    </div>
+
+    <div class="Right_side">
+
+        <h1>FORM SUBMISSION</h1>
+        <P>all the info here are collected for study purpeses and will be processed for further use</P>
+
+        <div class="Container_form">
+            <form action="dummie.com/index.txt"  method="post">
+
+                <fieldset>
+                <label for="fname">First name</label>
+                <input type="text" id="fname" required>
+
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" required>
+
+                </fieldset>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Example@mail.com" required>
+
+                <label for="tele">Phone Number</label>
+                <input type="tel" id="tele" pattern="05[0-9]{8}" maxlength="10" minlength="10" placeholder="0512345678" required>
+
+                
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" required minlength="6">
+                
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="confirm_password" required minlength="6">
+                                
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+
+        <P>Already have an account? <a href="login.html">Click here</a></P>
+    </div>
+
+</body>
+</html>
